@@ -22,3 +22,7 @@ Only **builds** will set the proper Procfile. If you use [Heroku Pipelines](http
 ## Authors
 
 Andrew Gwozdziewycz <apg@heroku.com> and Cyril David <cyx@heroku.com>
+
+## myAgro Fork
+
+Added support to have independent requirements.txt and runtime.txt files within each web service within a monorepo to support python deploys
