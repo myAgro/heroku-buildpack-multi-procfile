@@ -35,3 +35,13 @@ if [[ -f "${APP_DIR}/runtime.txt" ]]; then
     cp "${APP_DIR}/runtime.txt" "${BUILD_DIR}/runtime.txt"
     echo "Copied ${APP_DIR}/runtime.txt as runtime.txt successfully" | indent
 fi
+
+if [[ -f "${APP_DIR}/Pipfile" ]]; then
+    cp "${APP_DIR}/Pipfile" "${BUILD_DIR}/Pipfile"
+    echo "Copied ${APP_DIR}/Pipfile as Pipfile successfully" | indent
+fi
+
+if [[ -f "${APP_DIR}/Pipfile.lock" ]]; then
+    cp "${APP_DIR}/Pipfile.lock" "${BUILD_DIR}/Pipfile.lock"
+    echo "Copied ${APP_DIR}/Pipfile.lock as Pipfile.lock successfully" | indent
+fi
